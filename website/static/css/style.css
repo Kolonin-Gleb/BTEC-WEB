@@ -1,0 +1,136 @@
+/*
+Селекторы по эл. тегов - это плохо.
+Используй селекторы по классам
+*/
+
+/*Стили для основной страницы*/
+
+body {
+    /*Шрифты по умолчанию для сайта*/
+    font-size: 24px;
+    font-family: 'Times New Roman', Arial;
+    color:white;
+    /*Фон сайта*/
+    background-color: #61BCA6;
+}
+
+nav {
+    width: calc(100% - 5px);
+    margin-left: 10px;
+    margin-right: 10px;
+    position: fixed;
+    left: 0px;
+    top: -25px;
+}
+
+/*Стили для главного меню*/
+.top-menu {
+    width: calc(100% - 60px); /*Расчёт ширины блока*/
+    height: auto; /*Автоматический расчёт высоты блока*/
+    background-color: rgb(130, 140, 199);
+    /*Внешние отступы автоматические (одинаковые) для справа и слева*/
+    margin: auto;
+
+    /*Закрепление элемента при прокрутке*/
+    position: fixed;
+
+    /*Относительное позиционирование элемента*/
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Стили для элементов главного меню*/
+.top-menu-elements {
+    flex-direction: row; 
+    list-style: none; /*Убрать маркеры списка*/
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/*Изменение цвета при наведении*/
+.top-menu-elements li a:hover {
+    color:brown;
+}
+
+.top-menu-elements li {
+    margin-left: 13.5px;
+    margin-right: 13.5px;
+}
+
+.top-menu-elements li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*Для ссылки логотипа сайта*/
+.menu-logo-link {
+    display: inline-block;
+    border-radius: 20px; /*Как скруглить края изображения*/
+}
+
+/*Для лототипа сайта*/
+.menu-logo-img {
+    border-radius: 50px;
+}
+
+h2.heading {
+    text-align: center;
+    font-size: 36px;
+}
+
+img {
+    margin: 0px 20px 20px 20px;
+}
+
+p.text {
+    display: flex;
+    margin-right: 50px;
+}
+
+
+div.images {
+    display: grid; /*Представляетм блок в виде сетки*/
+    grid-template-columns: 1fr 1fr 1fr; /*Сетка будет состоять из 3 колонок одного размера*/
+    justify-content: space-between;
+}
+
+div.images img {
+    /*Картинки будут занимать часть от колонки*/
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 25px;
+
+    /*Размещение изображения по центру ячейки*/
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+/*Для тегов p с классом text*/
+p.text {
+    display: flex;
+    margin-right: 50px;
+}
+
+/*Для h2 с id = our_flowers*/
+h2#packages {
+    margin-top: 150px; /*Отступ, чтобы главное меню не закрывало название раздела*/
+}
+
+hr.line {
+    height: 20px;
+    background-color: rgb(63, 126, 52);
+}
+
+/*Изменения цвета для веделения*/
+::selection {
+    background-color:#ffee38;
+    color:#191919
+}
+
