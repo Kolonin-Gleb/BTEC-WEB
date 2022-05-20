@@ -128,9 +128,20 @@ hr.line {
     background-color: rgb(63, 126, 52);
 }
 
-/*Изменения цвета для веделения*/
+/*Изменения цвета для выделения*/
 ::selection {
     background-color:#ffee38;
     color:#191919
 }
 
+/*Снежная метель*/
+
+.sf-snow-flake {
+    position: fixed;
+    top: -20px;
+    z-index: 99999;
+    }
+    
+.sf-snow-anim {
+    top: 110%;
+}
