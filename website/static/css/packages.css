@@ -29,7 +29,17 @@ div.describtions {
 
 /*Стили для подписей к пакетам*/
 div.describtions p {
-    /*Картинки будут занимать часть от колонки*/
+    /*Текст будет занимать часть от колонки*/
+    max-width: 95%;
+    max-height: 95%;
+
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+div.describtions a {
+    /*Ссылки будут занимать часть от колонки*/
     max-width: 95%;
     max-height: 95%;
 
