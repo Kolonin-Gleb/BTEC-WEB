@@ -3,7 +3,7 @@
 Используй селекторы по классам
 */
 
-/*Стили для основной страницы*/
+/*Стили для главной страницы*/
 
 body {
     /*Шрифты по умолчанию для сайта*/
@@ -14,93 +14,25 @@ body {
     background-color: #61BCA6;
 }
 
-nav {
-    width: calc(100% - 5px);
-    margin-left: 10px;
-    margin-right: 10px;
-    position: fixed;
-    left: 0px;
-    top: -25px;
-}
-
-/*Стили для главного меню*/
-.top-menu {
-    width: calc(100% - 60px); /*Расчёт ширины блока*/
-    height: auto; /*Автоматический расчёт высоты блока*/
-    background-color: rgb(130, 140, 199);
-    /*Внешние отступы автоматические (одинаковые) для справа и слева*/
-    margin: auto;
-
-    /*Закрепление элемента при прокрутке*/
-    position: fixed;
-
-    /*Относительное позиционирование элемента*/
-    left: 0px;
-    right: 0px;
-    top: 0px;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-/*Стили для элементов главного меню*/
-.top-menu-elements {
-    flex-direction: row; 
-    list-style: none; /*Убрать маркеры списка*/
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-/*Изменение цвета при наведении*/
-.top-menu-elements li a:hover {
-    color:brown;
-}
-
-.top-menu-elements li {
-    margin-left: 13.5px;
-    margin-right: 13.5px;
-}
-
-.top-menu-elements li a{
-    text-decoration: none;
-    color: #fff;
-}
-
-
-/*Для ссылки логотипа сайта*/
-.menu-logo-link {
-    display: inline-block;
-    border-radius: 20px; /*Как скруглить края изображения*/
-}
-
-/*Для лототипа сайта*/
-.menu-logo-img {
-    border-radius: 50px;
-}
-
 h2.heading {
     text-align: center;
     font-size: 36px;
 }
 
+/*Отступы для изображений*/
 img {
     margin: 0px 20px 20px 20px;
 }
 
-p.text {
-    display: flex;
-    margin-right: 50px;
-}
-
-
-div.images {
+/*Блок с пакетами.*/
+div.packages {
     display: grid; /*Представляетм блок в виде сетки*/
-    grid-template-columns: 1fr 1fr 1fr; /*Сетка будет состоять из 3 колонок одного размера*/
+    grid-template-columns: 1fr 1fr; /*Сетка будет состоять из 2 колонок одного размера*/
     justify-content: space-between;
 }
 
-div.images img {
+/*Стили для картинок с пакетами*/
+div.packages img {
     /*Картинки будут занимать часть от колонки*/
     max-width: 95%;
     max-height: 95%;
@@ -112,15 +44,44 @@ div.images img {
     align-self: center;
 }
 
+/*Блок с описанием пакетов*/
+div.describtions {
+    display: grid; /*Представляетм блок в виде сетки*/
+    grid-template-columns: 1fr 1fr; /*Сетка будет состоять из 2 колонок одного размера*/
+    justify-content: space-between;
+}
+
+/*Стили для подписей к пакетам*/
+div.describtions p {
+    /*Картинки будут занимать часть от колонки*/
+    max-width: 95%;
+    max-height: 95%;
+
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+/*----------------------------------------------------------**/
+
+div.intro {
+    margin-top: 150px; /*Отступ, чтобы главное меню не закрывало название раздела*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* width: calc(100% - 60px); Расчёт ширины блока */
+    height: 100%;
+    background: url("Images/other/winter-resort.jpg") center no-repeat;
+    /* -webkit-background-size: cover; */
+    background-size: cover;
+}
+
+
 /*Для тегов p с классом text*/
 p.text {
     display: flex;
     margin-right: 50px;
-}
-
-/*Для h2 с id = our_flowers*/
-h2#packages {
-    margin-top: 150px; /*Отступ, чтобы главное меню не закрывало название раздела*/
 }
 
 hr.line {
@@ -135,7 +96,6 @@ hr.line {
 }
 
 /*Снежная метель*/
-
 .sf-snow-flake {
     position: fixed;
     top: -20px;

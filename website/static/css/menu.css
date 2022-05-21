@@ -1,0 +1,58 @@
+/*Все стили для меню в шапке сайта*/
+
+/*Стили для главного меню*/
+.top-menu {
+    width: calc(100% - 56px); /* Расчёт ширины блока */
+    height: auto; /*Автоматический расчёт высоты блока*/
+    
+    background-color: rgb(130, 140, 199);
+    /*Внешние отступы автоматические (одинаковые) для справа и слева*/
+    margin: auto;
+    /*Закрепление элемента при прокрутке*/
+    position: fixed;
+
+    /*Относительное позиционирование элемента*/
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    /*Отображение шапки*/
+    display: flex;
+    /*Выравнивание контента*/
+    justify-content: space-around;
+}
+
+/*Положение элементов главного меню*/
+.top-menu-elements {
+    flex-direction: row; 
+    list-style: none; /*Убрать маркеры списка*/
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+/*Вид элементов главного меню*/
+.top-menu-elements li a{
+    text-decoration: none;
+    color: #fff;
+}
+/*Отступы элементов главного меню*/
+.top-menu-elements li {
+    margin-left: 13.5px;
+    margin-right: 13.5px;
+}
+/*Изменение цвета при наведении*/
+.top-menu-elements li a:hover {
+    color:brown;
+}
+
+
+/*Для ссылки логотипа сайта*/
+.menu-logo-link {
+    display: inline-block;
+    border-radius: 20px; /*Скруглить края изображения*/
+}
+
+/*Для лототипа сайта*/
+.menu-logo-img {
+    border-radius: 50px;
+}
