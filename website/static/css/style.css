@@ -5,6 +5,10 @@
 
 /*Стили для главной страницы*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /*Шрифты по умолчанию для сайта*/
     font-size: 24px;
@@ -14,79 +18,40 @@ body {
     background-color: #61BCA6;
 }
 
-h2.heading {
-    text-align: center;
-    font-size: 36px;
-}
-
-/*Отступы для изображений*/
-img {
-    margin: 0px 20px 20px 20px;
-}
-
-/*Блок с пакетами.*/
-div.packages {
-    display: grid; /*Представляетм блок в виде сетки*/
-    grid-template-columns: 1fr 1fr; /*Сетка будет состоять из 2 колонок одного размера*/
-    justify-content: space-between;
-}
-
-/*Стили для картинок с пакетами*/
-div.packages img {
-    /*Картинки будут занимать часть от колонки*/
-    max-width: 95%;
-    max-height: 95%;
-    border-radius: 25px;
-
-    /*Размещение изображения по центру ячейки*/
-    display: flex;
-    justify-self: center;
-    align-self: center;
-}
-
-/*Блок с описанием пакетов*/
-div.describtions {
-    display: grid; /*Представляетм блок в виде сетки*/
-    grid-template-columns: 1fr 1fr; /*Сетка будет состоять из 2 колонок одного размера*/
-    justify-content: space-between;
-}
-
-/*Стили для подписей к пакетам*/
-div.describtions p {
-    /*Картинки будут занимать часть от колонки*/
-    max-width: 95%;
-    max-height: 95%;
-
-    display: flex;
-    justify-self: center;
-    align-self: center;
-}
-
-/*----------------------------------------------------------**/
-
-div.intro {
+div.big_img {
     margin-top: 150px; /*Отступ, чтобы главное меню не закрывало название раздела*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    /* width: calc(100% - 60px); Расчёт ширины блока */
     height: 100%;
     background: url("Images/other/winter-resort.jpg") center no-repeat;
-    /* -webkit-background-size: cover; */
+    -webkit-background-size: cover;
     background-size: cover;
 }
 
+/*Устранение смещения при переходе к якорю*/
+p.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden; /* Якорь не будет отображаться */
+}
 
-/*Для тегов p с классом text*/
+h2.heading {
+    text-align: center;
+    font-size: 36px;
+}
+
+/*Отступы изображений*/
+img {
+    margin: 0px 20px 20px 20px;
+}
+
+/*Текст вокруг изображений*/
 p.text {
     display: flex;
     margin-right: 50px;
-}
-
-hr.line {
-    height: 20px;
-    background-color: rgb(63, 126, 52);
 }
 
 /*Изменения цвета для выделения*/
