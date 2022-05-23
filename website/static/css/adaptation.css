@@ -1,0 +1,80 @@
+/*Адаптация для сайта*/
+
+/*Экран до 1440px*/
+
+/*Экран до 1000px*/
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 18px;
+    }
+    h2.heading {
+        font-size: 24px;
+    }
+    .menu-logo-img {
+        border-radius: 50px;
+        width: 80px;
+        height: 80px;
+    }
+    /*
+    div.packages {
+        width: 176px;
+        height: 218px;
+    }
+    */
+}
+
+/*Экран до 768px*/
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    h2.heading {
+        font-size: 20px;
+    }
+    .menu-logo-img {
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    /*
+    div.packages {
+        display: grid;
+        grid-template-columns: 1fr; Сетка будет состоять из 1 колонки
+        width: 141px;
+        height: 175px;
+    }
+    div.describtions {
+        display: grid;
+        grid-template-columns: 1fr; Сетка будет состоять из 1 колонки
+    }
+    */
+}
+
+/*Экран до 480px*/
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
+    h2.heading {
+        font-size: 16px;
+    }
+    .menu-logo-img {
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+    }
+    /*
+    div.packages {
+        display: grid;
+        grid-template-columns: 1fr; Сетка будет состоять из 1 колонки
+        width: 113px;
+        height: 140px;
+    }
+    div.describtions {
+        display: grid;
+        grid-template-columns: 1fr; Сетка будет состоять из 1 колонки
+    }
+    */
+}
+
