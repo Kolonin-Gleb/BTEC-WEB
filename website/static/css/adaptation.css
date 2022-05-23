@@ -15,12 +15,6 @@
         width: 80px;
         height: 80px;
     }
-    /*
-    div.packages {
-        width: 176px;
-        height: 218px;
-    }
-    */
 }
 
 /*Экран до 768px*/
@@ -36,19 +30,9 @@
         width: 60px;
         height: 60px;
     }
-    
-    /*
-    div.packages {
-        display: grid;
-        grid-template-columns: 1fr; Сетка будет состоять из 1 колонки
-        width: 141px;
-        height: 175px;
+    img.clients {
+        display: none;
     }
-    div.describtions {
-        display: grid;
-        grid-template-columns: 1fr; Сетка будет состоять из 1 колонки
-    }
-    */
 }
 
 /*Экран до 480px*/
@@ -64,17 +48,31 @@
         width: 40px;
         height: 40px;
     }
-    /*
-    div.packages {
-        display: grid;
-        grid-template-columns: 1fr; Сетка будет состоять из 1 колонки
-        width: 113px;
-        height: 140px;
+    div.card_holder {
+        width: 100%;
     }
-    div.describtions {
-        display: grid;
-        grid-template-columns: 1fr; Сетка будет состоять из 1 колонки
+    img.clients {
+        display: none;
     }
-    */
 }
 
+/*Экран до 360px*/
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 8px;
+    }
+    h2.heading {
+        font-size: 14px;
+    }
+    .menu-logo-img {
+        border-radius: 50px;
+        width: 20px;
+        height: 20px;
+    }
+    div.card_holder {
+        width: 100%;
+    }
+    img.clients {
+        display: none;
+    }
+}

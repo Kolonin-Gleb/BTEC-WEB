@@ -1,0 +1,25 @@
+/*Стили для предлагаемых пакетов и их описания*/
+/* Они реализованы в виде карточек */
+
+div.packages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.card_holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+/*Услуги по оборудованию*/
+
+div.card_service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}

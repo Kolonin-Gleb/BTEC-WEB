@@ -50,12 +50,19 @@ h2.heading {
 /*Отступы изображений*/
 img {
     margin: 0px 20px 20px 20px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
+/*Услуги*/
 img.services {
     /* Для того, чтобы изображения услуг помещались в body */
     width: min(550px, calc(100vw - 250px));
+}
+
+/*Клиенты*/
+img.clients {
+    /* Для того, чтобы изображения услуг помещались в body */
+    width: min(550px, calc(100vw - 500px));
 }
 
 /*Текст вокруг изображений*/

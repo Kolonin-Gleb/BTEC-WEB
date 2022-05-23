@@ -14,7 +14,7 @@
     <!-- Подключение CSS к странице -->
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="stylesheet" href="./static/css/menu.css">
-    <link rel="stylesheet" href="./static/css/packages.css">
+    <link rel="stylesheet" href="./static/css/cards.css">
 	<link rel="stylesheet" href="./static/css/form.css">
 
     <!-- Адаптация сайта -->
@@ -33,7 +33,7 @@
             <h1>Getaway Holidays</h1>
 
             <ul class="top-menu-elements">
-                <li><a href="#packages">Пакеты</a></li>
+                <li><a href="#packages_section">Пакеты</a></li>
                 <li><a href="#services">Услуги</a></li>
                 <li><a href="#comments">Отзывы</a></li>
                 <li><a href="#buy">Забронировать</a></li>
@@ -45,60 +45,70 @@
         <img src="./Images/other/winter-resort.jpg" alt="winter-resort">
     </div>
 
-    <p class="anchor" id="packages">INVISIBLE ANCHOR</p>
+    <p class="anchor" id="packages_section">INVISIBLE ANCHOR</p>
     <h2 class="heading">Пакеты:</h2>
 
     <!-- <input value="КНОПКА МЕТЕЛИ" onclick="press()" type="button"> -->
 
     <div class="packages">
-        <img src="./Images/photos/2 Packages/1 Base package.png" title="Базовый пакет" alt="Базовый пакет">
-        <img src="./Images/photos/2 Packages/2 Standart package.png" title="Стандартный пакет" alt="Стандартный пакет">
-    </div>
-    <div class="describtions">
-        <p>
-            Базовый пакет включает: <br>
-            – 1 утренний перекус <br>
-            – 1 ужин <br>
-            – 1 час санаторно-курортных процедур <br>
-            – бесплатный пропуск на подъемник на 1 день. <br>
-            <br>
-            Стоимость: 2.000 рублей<br>
-        </p>
-        <p>
-            Оптимальный пакет включает: <br>
-            – 3 утренних перекуса <br>
-            – 3 ужина <br>
-            – 3 спа-процедуры по 1 часу <br>
-            – бесплатный пропуск на подъемник на 3 дня. <br>
-            <br>
-            Стоимость: 5.000 рублей <br>
-        </p>
-    </div>
-    <div class="packages">
-        <img src="./Images/photos/2 Packages/3 Luxe package.png" title="Люкс пакет" alt="Люкс пакет">
-        <img src="./Images/photos/2 Packages/4 Individual package.png" title="Индивидуальный пакет" alt="Индивидуальный пакет">
-    </div>
-    <div class="describtions">
-        <p>
-            Максимальный пакет включает: <br>
-            – ежедневные утренние закуски <br>
-            – 5 ужинов <br>
-            – 5 спа-процедур по 1 часу <br>
-            – бесплатный абонемент на подъемник на 1 неделю. <br>
-            <br>
-            Стоимость: 10.000 рублей <br>
-        </p>
-        <p>
-            Индивидуальный пакет включает: <br>
-            - Максимальный пакет <br>
-            - Персонализированное меню <br>
-            - VIP доступ к услугам центра <br>
-            - Групповые занятия <br>
-            - Занятия Апре-ски <br>
-            - Услуги Яслей <br>
-            <br>
-            Стоимость: 15.000 рублей <br>
-        </p>
+        <div class="card_holder">
+            <div class="card">
+                <img src="./Images/photos/2 Packages/1 Base package.png" title="Базовый пакет" alt="Базовый пакет">
+                <p>
+                    Базовый пакет включает: <br>
+                    – 1 утренний перекус <br>
+                    – 1 ужин <br>
+                    – 1 час санаторно-курортных процедур <br>
+                    – бесплатный пропуск на подъемник на 1 день. <br>
+                    <br>
+                    Стоимость: 2.000 рублей<br>
+                </p>
+            </div>
+        </div>
+        <div class="card_holder">
+            <div class="card">
+                <img src="./Images/photos/2 Packages/2 Standart package.png" title="Стандартный пакет" alt="Стандартный пакет">
+                <p>
+                    Оптимальный пакет включает: <br>
+                    – 3 утренних перекуса <br>
+                    – 3 ужина <br>
+                    – 3 спа-процедуры по 1 часу <br>
+                    – бесплатный пропуск на подъемник на 3 дня. <br>
+                    <br>
+                    Стоимость: 5.000 рублей <br>
+                </p>
+            </div>
+        </div>
+        <div class="card_holder">
+            <div class="card">
+                <img src="./Images/photos/2 Packages/3 Luxe package.png" title="Максимальный пакет" alt="Максимальный пакет">
+                <p>
+                    Максимальный пакет включает: <br>
+                    – ежедневные утренние закуски <br>
+                    – 5 ужинов <br>
+                    – 5 спа-процедур по 1 часу <br>
+                    – бесплатный абонемент на подъемник на 1 неделю. <br>
+                    <br>
+                    Стоимость: 10.000 рублей <br>
+                </p>
+            </div>
+        </div>
+        <div class="card_holder">
+            <div class="card">
+                <img src="./Images/photos/2 Packages/4 Individual package.png" title="Индивидуальный пакет" alt="Индивидуальный пакет">
+                <p>
+                    Индивидуальный пакет включает: <br>
+                    - Максимальный пакет <br>
+                    - Персонализированное меню <br>
+                    - VIP доступ к услугам центра <br>
+                    - Групповые занятия <br>
+                    - Занятия Апре-ски <br>
+                    - Услуги Яслей <br>
+                    <br>
+                    Стоимость: 15.000 рублей <br>
+                </p>
+            </div>
+        </div>
     </div>
 
     <p class="anchor" id="services">INVISIBLE ANCHOR</p>
@@ -168,25 +178,31 @@
     </p>
 
     <div class="packages">
-        <img src="./Images/photos/1 Services/6 equipment maintenance.jpg" alt="Ремонт оборудования">
-        <img src="./Images/photos/1 Services/7 equipment rental.jpg" alt="Аренда оборудования">
+        <div class="card_service">
+            <div class="card">
+                <img class="services" src="./Images/photos/1 Services/6 equipment maintenance.jpg" alt="Ремонт оборудования">
+                <p>
+                    Обслуживание оборудования: <br>
+                    Наши мастера позаботятся о надёжности вашей экипировки.<br>
+                </p>
+            </div>
+        </div>
+        <div class="card_service">
+            <div class="card">
+                <img class="services" src="./Images/photos/1 Services/7 equipment rental.jpg" alt="Аренда оборудования">
+                <p>
+                    Аренда лучшего оборудования: <br>
+                    При покупке пакетов оборудование выдаётся бесплатно!<br>
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="describtions">
-        <p>
-            Обслуживание оборудования: <br>
-            Наши мастера позаботятся о надёжности вашей экипировки.<br>
-        </p>
-        <p>
-            Аренда лучшего оборудования: <br>
-            При покупке пакетов оборудование выдаётся бесплатно!<br>
-        </p>
-    </div>
-
+    
     <p class="anchor" id="comments">INVISIBLE ANCHOR</p>
     <h2 class="heading">Отзывы:</h2>
 
     <p class="around">
-        <img src="./Images/other/woman-client.jpg" width="341" height="508" alt="woman-client">
+        <img class="clients" src="./Images/other/woman-client.jpg" alt="woman-client">
         
         <span>
             Курорт и природа вокруг него невороятна красивая.<br>
@@ -201,8 +217,10 @@
         </span>
     </p>
 
+    <br><br>
+
     <p class="around">
-        <img src="./Images/other/man-client.jpg" width="424" height="563" alt="man-client">
+        <img class="clients" src="./Images/other/man-client.jpg" alt="man-client">
         
         <span>
             Невероятно вкусная еда, приготовленная профессионалами!<br>
