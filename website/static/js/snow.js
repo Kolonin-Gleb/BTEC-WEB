@@ -3,12 +3,6 @@
 let flakes_count = 25;
 let isFlurry = true;
 
-// Метель на сайте
-// jQuery(document).ready(function($){
-
-
-// });
-
 $(document).snowFlurry({
     maxSize: 5,
     numberOfFlakes: flakes_count,
