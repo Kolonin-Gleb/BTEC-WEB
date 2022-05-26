@@ -16,10 +16,10 @@ div.card_holder {
 }
 
 /*Услуги по оборудованию*/
-
+/*Хранятся отдельно от card_holder, т.к. адаптируются иначе*/
 div.card_service {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 50%;
 }

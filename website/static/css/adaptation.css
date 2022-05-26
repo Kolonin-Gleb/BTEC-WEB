@@ -1,9 +1,7 @@
 /*Адаптация для сайта*/
 
 /*Экран до 1440px*/
-
-/*Экран до 1000px*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1440px) {
     body {
         font-size: 18px;
     }
@@ -14,6 +12,13 @@
         border-radius: 50px;
         width: 80px;
         height: 80px;
+    }
+}
+
+/*Экран до 1180px*/
+@media screen and (max-width: 1180px) {
+    div.card_service {
+        width: 100%;
     }
 }
 
